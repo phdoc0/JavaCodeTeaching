@@ -7,6 +7,7 @@ public class DataTypes {
     
     public static void main(String[] args){
         System.out.println("Starting Program");
+        System.out.println("Test");
 
         //Integer 
         /**
