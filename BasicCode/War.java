@@ -72,6 +72,8 @@ class Deck{
         return newCarcdset; 
 
 } //Full deck
+
+System.out.print("Current Game: " + g + " of " + hand.size())
 class Player{
     //variable
     Array hand = new Array[26];
@@ -141,5 +143,31 @@ public class War { //This class should be call app
  
         
     }
+
+    if(oneCard.getValue() > twoCard.getValue())
+    {
+
+    }else if(oneCard.getValue() < twoCard.getValue())
+    {
+
+    }else{continue;}
+
+
+
+    for (int g = 0; g < (one.hand.size() - 1); g++) {
+        Card oneCard = one.flip();
+        Card twoCard = two.flip();
+        if (oneCard.getValue() > twoCard.getValue()) {
+            one.incrementScore();
+        } else if (twoCard.getValue() > oneCard.getValue()) {
+            two.incrementScore();
+        } else {
+            continue;
+
+        }
+    
+
+    }//in for loop
+
     
 }
